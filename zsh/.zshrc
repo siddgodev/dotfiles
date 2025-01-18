@@ -15,7 +15,7 @@ fi
 export EDITOR=nvim
 
 # Neovim virtual environment configuration
-export NVIM_PYTHON_VENV="$HOME/.config/nvim/env"
+export NVIM_PYTHON_VENV="$HOME/.local/virtualenvs/nvim"
 
 # History configuration
 HISTSIZE=5000
