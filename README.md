@@ -42,7 +42,7 @@ Once all prerequisites are installed and configured, follow these steps to set u
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url> ~/.dotfiles
+   git clone git@github.com:siddgodev/dotfiles.git ~/.dotfiles
    cd ~/.dotfiles
    ```
 
