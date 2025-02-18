@@ -145,3 +145,11 @@ alias path="echo $PATH | tr ':' '\n'"
 
 # Ensure zinit completions are properly loaded
 zinit cdreplay -q
+
+# pnpm
+export PNPM_HOME="/home/sidd/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
