@@ -112,6 +112,7 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+export PATH=~/.npm-global/bin:$PATH
 
 # =============================================================================
 #                                 Key Bindings
