@@ -102,9 +102,10 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 #                              Tool Integration
 # =============================================================================
 # asdf version manager
-. "$HOME/.asdf/asdf.sh"
+# Source asdf from AUR installation
+[ -f /opt/asdf-vm/asdf.sh ] && . /opt/asdf-vm/asdf.sh
 # append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
+[ -d /opt/asdf-vm/completions ] && fpath=(/opt/asdf-vm/completions $fpath)
 
 # Additional tools
 # Shell integrations(requires fzf)
